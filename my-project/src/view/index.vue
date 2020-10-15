@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <mt-cell title="标题" label="描述信息" is-link></mt-cell>
     <p class="stylus_test">这是stylus测试文字</p>
     <banner></banner>
+    <mt-button type="primary">primary</mt-button>
     <!-- <router-link to="/banner">banner</router-link> -->
-    <router-link to="/page1">page1</router-link>
-    <router-link to="/page2">page2</router-link>
+    <div class="target">
+      <router-link to="/page1">page1</router-link>
+      <router-link to="/page2">page2</router-link>
+    </div>
+  
     <!-- <router-view></router-view> -->
-    <vfooter></vfooter>
+    <vfooter class="footer_style"></vfooter>
   </div>
 </template>
 
@@ -25,13 +30,31 @@ export default {
     return {};
   },
   methods: {},
+  mounted(){
+
+  },
 };
 </script>
 
 <style>
-#app {
-  font-size: 16px;
-  color: #000;
-  text-align: center;
-}
+  #app {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+  }
+  .stylus_test{
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+  }
+  .target{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .footer_style{
+    margin: 10px auto 0;
+  }
 </style>
