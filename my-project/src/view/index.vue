@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <mt-cell title="标题" label="描述信息" is-link></mt-cell>
+    <banner>
+      插槽测试文字显示
+    </banner>
     <p class="stylus_test">这是stylus测试文字</p>
-    <banner></banner>
     <mt-button type="primary">primary</mt-button>
     <!-- <router-link to="/banner">banner</router-link> -->
     <div class="target">

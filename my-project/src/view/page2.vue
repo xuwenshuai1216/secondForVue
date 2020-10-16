@@ -4,6 +4,7 @@
     <p>{{ msg }}</p>
     <el-radio v-model="radio" label="1">备选项</el-radio>
     <el-radio v-model="radio" label="2">备选项</el-radio>
+    <router-link to="/">首页</router-link>
   </div>
 </template>
 <script>
